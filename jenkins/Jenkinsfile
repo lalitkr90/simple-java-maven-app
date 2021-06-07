@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'yeow/maven-java8-git-ssh:v1'
+            image 'openjdk:8-jre-alpine'
             args '-v /root/.m2:/root/.m2'
         }
     }
